@@ -1,6 +1,6 @@
-import { Express } from "express";
+import express from "express";
 
-const app = new Express();
+const app = new express();
 
 app.get("/", (req,res) =>{
     res.send("Hello World");
