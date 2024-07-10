@@ -1,6 +1,8 @@
 import express from "express";
+import dotenv from "dotenv";
+dotenv.config();
 
-const app = new express();
+const app = express();
 
 app.get("/", (req,res) =>{
     res.send("Hello World");
@@ -34,7 +36,7 @@ app.get("/api/jokes", (req,res) =>{
     res.json(jokes);
 });
 
-const port =  process.env.PORT || 3000;
+const port =  process.env.PORT || 4000;
 
 app.listen(port,()=>{
     console.log(`Server at http://localhost:${port}`);
