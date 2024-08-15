@@ -14,6 +14,7 @@ function App() {
       console.log(error)
     })
   }
+  
   // useEffect(()=>{
   //   axios.get('/api/jokes')
   //   .then((response) => {
@@ -37,6 +38,8 @@ function App() {
         </div>
       ))
      }
+
+      <button onClick={() => setjokes([]) }>Click me To remove Jokes</button>
     </>
   )
 }
